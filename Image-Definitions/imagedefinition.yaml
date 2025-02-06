@@ -10,6 +10,11 @@ tasks:
       package:  Microsoft.Azd
 
   - name: ~/winget
+    description: Install Git
+    parameters:
+      package:  Git.Git
+
+  - name: ~/winget
     description: Install Visual Studio Code
     parameters:
       package:  Microsoft.VisualStudioCode
