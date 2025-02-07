@@ -1,0 +1,20 @@
+# This is a Visual Studio extension installation task for Dev Box.
+
+$schema: 1.0
+name: install-vscode-extension
+description: Installs a Visual Studio Code extension
+author: Microsoft Corporation
+command: "code --install-extension {{extensionId}}"
+parameters:
+  extensionId:
+    type: string
+    required: true
+    description: |
+      The identifier of the Visual Studio Code extension to install.
+documentation:
+  notes: This task is used to install a Visual Studio Code extension.
+  examples:
+    - name: install-vscode-extension
+      description: Install GitHub Copilot
+      parameters:
+        extensionId: github.copilot
